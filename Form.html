@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML FORM</title>
+  </head>
+  <body>
+    <!-- 基本工具 -->
+    <h2>基本工具</h2>
+    <form action="" method="">
+      <!-- 姓名 -->
+      <label for="name">姓名:</label>
+      <input
+        id="name"
+        type="text"
+        name="name"
+        placeholder="請輸入真實姓名"
+        required
+      />
+      <br />
+      <!-- 信箱 -->
+      <label for="email">信箱:</label>
+      <input id="email" type="email" name="email" required />
+      <br />
+      <!-- 多擇一 -->
+      <input type="radio" name="gender" id="male" value="male" required />
+      <label for="male">男性</label>
+      <input type="radio" name="gender" id="female" value="male" />
+      <label for="female">女性</label>
+      <br />
+      <!-- 數字 -->
+      <label for="age">身高:</label>
+      <input id="age" type="number" name="age" min="0" max="150" step="0.1" />
+      <br />
+      <!-- 有範圍的本質是數字 -->
+      <label for="age2">大約年齡:</label>
+      <br />
+      0<input
+        id="age2"
+        type="range"
+        name="age2"
+        min="0"
+        max="150"
+        step="10"
+      />150
+      <br />
+      <!-- 勾勾 -->
+      <input id="c" type="checkbox" name="news" value="newspaper" checked />
+      <label for="c">訂閱電子報</label>
+      <br />
+      <!-- 上傳檔案 -->
+      <input type="file" name="file" />
+      <br />
+      <!-- 密碼 -->
+      <label for="password">密碼:</label>
+      <input
+        id="password"
+        type="password"
+        name="password"
+        minlength="8"
+        maxlength="12"
+      />
+      <br />
+      <!-- 提交按鈕 -->
+      <button type="submit">確認</button>
+    </form>
+
+    <br /><br /><br />
+    <!-- 進階工具 -->
+    <h2>進階工具</h2>
+    <form action="">
+      <!-- 給選項 -->
+      <label for="gender2">性別:</label>
+      <select name="gender2" id="gender2" required>
+        <option></option>
+        <option value="male">男</option>
+        <option value="female">女</option>
+      </select>
+      <br />
+      <!-- 有點像搜尋建議的東西 -->
+      <label for="area">地區縣市:</label>
+      <input list="arealist" type="text" id="area" name="area" />
+      <datalist id="arealist">
+        <option value="台南市">台南市</option>
+        <option value="台北市">台北市</option>
+        <option value="高雄市">高雄市</option>
+      </datalist>
+      <br />
+      <!-- 留言的地方 -->
+      <label for="word">留言板:</label>
+      <br />
+      <textarea
+        name="word"
+        id="word"
+        cols="30"
+        rows="10"
+        placeholder="請留言"
+      ></textarea>
+      <button type="submit">submit</button>
+    </form>
+
+    <br /><br /><br />
+    <!-- 登入用的form -->
+    <h2>登入用的form</h2>
+    <form action="" method="post">
+      <label for="email">username:</label>
+      <input
+        type="email"
+        name="username"
+        id="email"
+        placeholder="請輸入使用者"
+        required
+      />
+      <br />
+      <label for="password">password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="請輸入密碼"
+        required
+      />
+      <br />
+      <button>submit</button>
+    </form>
+    <br /><br /><br />
+
+    <!-- 註冊用的form -->
+    <h2>註冊用的form</h2>
+    <form action="">還沒寫</form>
+  </body>
+</html>
