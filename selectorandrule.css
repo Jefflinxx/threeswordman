@@ -1,0 +1,87 @@
+/* selectorandrule */
+
+/* Universal Selectors */
+* {
+  color: coral;
+}
+
+/* Element */
+h1 {
+}
+
+/* ID */
+/* 唯一的 */
+#idname {
+  color: cornflowerblue;
+}
+
+/* Class */
+/* 可以掛很多個 */
+.c1 {
+  color: rgb(155, 104, 104);
+}
+.c2 {
+  font-size: large;
+}
+
+/* tag 跟 class 併用 */
+h1.c1 {
+}
+
+/* Grouping */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div.c4 a {
+  color: turquoise;
+}
+
+/* Descendant */
+div.c3 a {
+  color: rgb(67, 153, 106);
+}
+div.c4 a {
+}
+
+/* Atrribute */
+input[type="text"] {
+  font-size: larger;
+}
+
+/* Pseudo classes */
+/* 根據不同狀態會產生什麼結果 */
+
+/* 滑過 */
+input[type="text"]:hover {
+}
+/* 按著 */
+input[type="text"]:active {
+}
+/* 點到，移動到下個前 */
+input[type="text"]:focus {
+  color: black;
+}
+
+/* Pseudo elements */
+p::before {
+  content: "d";
+  color: brown;
+}
+
+p::after {
+  content: "<";
+  color: brown;
+}
+
+p::first-letter {
+  font-size: 3rem;
+}
+
+/* 選取反白顏色 */
+p::selection {
+  background-color: chartreuse;
+  color: white;
+}

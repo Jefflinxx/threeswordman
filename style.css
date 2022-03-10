@@ -1,0 +1,29 @@
+/* flex item */
+
+div.container {
+  background-color: black;
+  width: 500px;
+  height: 500px;
+  display: flex;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.box1 {
+  background-color: brown;
+}
+.box2 {
+  background-color: cadetblue;
+}
+.box3 {
+  background-color: coral;
+}
+.box4 {
+  background-color: cyan;
+}
+.box5 {
+  background-color: darkgrey;
+}

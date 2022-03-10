@@ -1,0 +1,90 @@
+/* font size */
+p {
+  /* 絕對單位，像素，瀏覽器預設是16 */
+  font-size: 16px;
+  /* 相對單位，原本的幾倍 */
+  /* 當你瀏覽器改變字體大小時，他會跟著改變 */
+  font-size: 1rem;
+}
+
+/* text-align */
+p {
+  /* 文字置中 */
+  text-align: center;
+  /* 文字靠左，預設 */
+  text-align: left;
+  /* 靠右 */
+  text-align: right;
+}
+
+/* text-decoration */
+p {
+  /* 切線切在字上面 */
+  text-decoration: line-through;
+  /* 底線 */
+  text-decoration: underline;
+  /* 如果他有預設的話就讓他沒有 */
+  /* a tag */
+  text-decoration: none;
+}
+
+/* line-height */
+/* 行距 */
+p {
+  line-height: 1px;
+  line-height: 1rem;
+}
+
+/* letter spacing */
+/* 字跟字的空間 */
+p {
+  letter-spacing: 1px;
+  letter-spacing: -1px;
+  letter-spacing: 1rem;
+}
+
+/* font-family */
+/* 字體 */
+/* css font stack */
+/* google font */
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* font weight */
+/* 字體粗度 */
+p {
+  /* 預設 */
+  font-weight: 400;
+}
+
+/* text-indent */
+/* 段落前方會留空間 */
+p {
+  text-indent: 32px;
+}
+
+body {
+  background-color: thistle;
+  background-image: url("./image");
+  background: thistle;
+  background: url("./image");
+  /* 他會把圖片放到最大，如果沒辦法填滿就會才repeat到填滿 */
+  background-size: contain;
+  /* 那你也可以在contain的情況不要讓他repeat */
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* 把他放到最大直到整個圖覆蓋整個範圍（這邊是body） */
+  background-size: cover;
+
+  /* 背景圖的位置 */
+  background-position: top;
+  background-position: right;
+  background-position: bottom;
+  background-position: left;
+  background-position: center;
+
+  background-size: cover;
+  background-position: center;
+}

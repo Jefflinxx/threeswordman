@@ -1,0 +1,75 @@
+
+
+/* transiton */
+/* 若元素有變動時就會去填補變化過程的畫面 */
+/* 屬性名,時間,function */
+/* 注意覆蓋的問題 */
+
+h1:hover {
+  background-color: darkcyan;
+  color: chocolate;
+}
+
+h1 {
+    transition: all 1s ease-in-out;
+}
+
+/* transform */
+/* translate 移動位置 */
+
+h1:hover {
+  transform: translate(100px, 100px);
+}
+
+h1 {
+  transition: all 1s ease-in-out;
+}
+
+/* translate拿來做置中 */
+div.container {
+  width: 500px;
+  height: 500px;
+  background-color: darkgrey;
+  position: relative;
+}
+
+div.box {
+  width: 100px;
+  height: 100px;
+  background-color: darkolivegreen;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* 相對於自己 */
+  transform: translate(-50%, -50%);
+}
+
+/* rotate */
+h1:hover {
+    transform: rotate(90deg);
+  }
+  
+  h1 {
+    transition: all 1s ease-in-out;
+  }
+
+  /* scale */
+/* 以element的中心去放大 */
+  h1:hover {
+      /* 放大幾倍 */
+    transform: scale(1);
+    /* 上下、左右放大幾倍 */
+    transform: scale(1,2);
+  }
+  
+  h1 {
+    transition: all 1s ease-in-out;
+  }
+
+  /* 3D transform */
+  h1{
+      transform: rotateX(45deg);
+      transform: rotateY(45deg);
+      /* 跟rotate一樣 */
+      transform: rotateZ(45deg);
+  }

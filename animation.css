@@ -1,0 +1,27 @@
+div.container {
+  width: 500px;
+  height: 500px;
+  background-color: darkgrey;
+}
+
+div.box {
+  width: 100px;
+  height: 100px;
+  background-color: darkolivegreen;
+  position: relative;
+  animation: cross 3s ease-in-out 1s;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes cross {
+  from {
+    background-color: darkslateblue;
+    top: 0;
+    left: 0;
+  }
+  to {
+    background-color: dimgray;
+    top: 400px;
+    left: 400px;
+  }
+}

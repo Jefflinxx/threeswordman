@@ -1,0 +1,59 @@
+/* flex item */
+
+div.container {
+  background-color: black;
+  /* 不必做長寬的設定 */
+  /* width: 500px;
+    height: 500px; */
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction:row
+}
+
+.box {
+  /* 不設定width他就會根據content */
+  /* 設定的話，他也會隨著container的大小而改變，但不會大於你設定的值 */
+  /* 搭配flex-wrap: wrap;就可以換行而不被壓縮 */
+  /* width: 100px; */
+
+  /* 在我不設定width的情況下，設定flex-grow */
+  /* 搭配flex-basis去設定他的最小值，再小就換行 */
+  /* 算法 */
+  flex-grow: 1;
+  flex-basis: 50px;
+
+/* short hand的寫法 */
+/* grow shrink basis */
+flex: 1 1 50px;
+
+  /* 不設定height他就會根據content */
+  /* 設定的話，他不會隨著container的大小而改變*/
+  /* 如果container有設定height的話，他會跟container一樣高，這是因為align-items: stretch;這個預設值的關係 */
+  height: 100px;
+}
+
+.box1 {
+  background-color: brown;
+}
+.box2 {
+  background-color: cadetblue;
+}
+.box3 {
+  background-color: coral;
+}
+.box4 {
+  background-color: cyan;
+}
+.box5 {
+  background-color: darkgrey;
+}
+
+div.contianer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:stretch;
+    align-items: ;
+    
+
+}

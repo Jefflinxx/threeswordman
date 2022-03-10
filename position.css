@@ -1,0 +1,35 @@
+div {
+  /* 預設 */
+  /* 就是根據他的display去排 */
+  /* 只有他無法設定z-index */
+  /* 無法成為absolute的參考 */
+  position: static;
+
+  /* 相對於自己原本的位置 */
+  position: relative;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  z-index: 5;
+
+  /* 抽離原先display賦予的規則 */
+  /* 以初始你看到的畫面為基準，或者parent的空間為基準 */
+  /* 直接去設定他的絕對位置 */
+  position: absolute;
+  /* 靠最上、右 */
+  top: 0;
+  right: 0;
+
+  /* 抽離原先display賦予的規則 */
+  /* 一直以初始你看到的畫面為基準，或者parent的空間為基準 */
+  /* 做nav */
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  /* 設定完後不會改變直到當你移動畫面達到你給他設定的條件時，他就會固定住 */
+  position: sticky;
+  top: 0;
+  width: 100%;
+}

@@ -1,0 +1,54 @@
+/* block,inline,inline-block,flex */
+img,
+input,
+button,
+select,
+textarea {
+}
+
+/* width, height */
+/* 不能作用在inline element */
+p {
+  background-color: burlywood;
+  width: 500px;
+  height: 500px;
+  /* 隨著螢幕變化改變 */
+  width: 50vw;
+  height: 50vh;
+  /* 相對於parent element */
+  width: 50%;
+  height: 50%;
+}
+
+/* 可以用dispaly去改 */
+a {
+  display: block;
+}
+
+/* padding */
+/* padding是content到border之間的距離 */
+p {
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+
+  padding: 2rem;
+
+  padding: 1rem 2rem;
+
+  padding: 1rem 2rem 3rem 4rem;
+}
+
+/* margin */
+/* vertical margin 對 inline element是沒有作用的 */
+p {
+  margin: 1rem;
+}
+
+/* border */
+p {
+  border: 1rem solid brown;
+  border: 1rem dashed brown;
+  border: double;
+}

@@ -1,0 +1,33 @@
+/* 透明度
+可以套用到所有element */
+/* 0~1之間 */
+h1 {
+  opacity: 1;
+}
+
+/* 游標設定 */
+h1 {
+  cursor: pointer;
+  cursor: none;
+  cursor: grab;
+}
+
+/* border-radius */
+div {
+  width: 500px;
+  height: 500px;
+  background-color: darkgrey;
+  /* 越大越圓 */
+  border-radius: 1px;
+  /* 圓 */
+  border-radius: 50%;
+}
+
+/* overflow */
+div {
+  width: 500px;
+  height: 500px;
+  background-color: darkgrey;
+  overflow: hidden;
+  overflow: scroll;
+}
